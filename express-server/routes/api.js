@@ -8,6 +8,12 @@ const dbHost = 'mongodb://database/mean-docker';
 // Connect to mongodb
 mongoose.connect(dbHost);
 
+// create mongoose schema
+const userSchema = new mongoose.Schema({
+    name: String,
+    age: Number
+});
+
 // GET api listing.
 router.get('/', (req, res) => {
     res.send('api works');
