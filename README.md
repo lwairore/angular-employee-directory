@@ -9,7 +9,7 @@ The approach that I took was to built the app in our local environment, then doc
 
 **NOTE**: I only built two containers, Angular and the Express/Node API. The third container can from a MongoDB image that I pulled from the [Docker Hub](https://hub.docker.com/explore/)
 
-This application is to allow a business/company to record they employees.
+This application is to allow a business/company to record their employees.
 
 This is how the application looks:
 ![This image displays how the application looks like](angular-client/src/assets/demos/angular-employee-directory.png)
