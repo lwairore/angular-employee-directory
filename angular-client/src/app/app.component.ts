@@ -18,6 +18,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this._unsubscribeAddPersonSubscription();
+
+    this._unsubscribeGetAllPeopleSubscription();
   }
 
   private _unsubscribeAddPersonSubscription() {
@@ -26,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
-  private _unsubscribegetAllPeopleSubscription() {
+  private _unsubscribeGetAllPeopleSubscription() {
     if (this._getAllPeopleSubscription instanceof Subscription) {
       this._getAllPeopleSubscription.unsubscribe();
     }
