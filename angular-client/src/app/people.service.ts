@@ -16,4 +16,10 @@ export class PeopleService {
 
     return this.__httpClient.post(url, { name, age });
   }
+
+  getAllPeople$() {
+    const url = `${environment.API}/users`;
+
+    return this.__httpClient.get(url);
+  }
 }
