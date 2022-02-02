@@ -26,6 +26,12 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
+  private _unsubscribegetAllPeopleSubscription() {
+    if (this._getAllPeopleSubscription instanceof Subscription) {
+      this._getAllPeopleSubscription.unsubscribe();
+    }
+  }
+
   addPerson(name, age) {
     this._addPersonSubscription = this._peopleService.addPerson$(name, age)
       .subscribe(() => {
