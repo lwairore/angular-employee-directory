@@ -22,4 +22,13 @@ router.get('/', (req, res) => {
     res.send('api works');
 });
 
+// GET all users.
+router.get('/users', (req, res) => {
+    User.find({}, (err, users) => {
+        if (err) res.status(500).send(error)
+
+        res.status(200).json(users);
+    });
+});
+
 module.exports = router;
