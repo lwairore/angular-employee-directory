@@ -1,1 +1,8 @@
 version: '2'
+
+services:
+  angular: 
+      build: angular-client 
+      ports:
+        - "4200:4200" 
+        
