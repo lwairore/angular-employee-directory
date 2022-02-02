@@ -10,6 +10,8 @@ import { PeopleService } from './people.service';
 export class AppComponent implements OnInit, OnDestroy {
   private _addPersonSubscription: Subscription;
 
+  private _getAllPeopleSubscription: Subscription;
+
   constructor(private _peopleService: PeopleService) { }
 
   ngOnInit() { }
