@@ -18,3 +18,7 @@ This is how the application looks:
 - [Angular](https://angular.io/)
 - [Docker](https://www.docker.com/)
 - [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+# Reading resources
+1. [Docker Hub](https://hub.docker.com/explore/) - Docker Hub is a repository for docker images. It’s where we pull down official docker images such as MongoDB, NodeJs, Ubuntu, and we can also create custom images and push them to Docker Hub for other people to pull and use.
+2. [Docker Compose](https://docs.docker.com/compose/) - Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration.
