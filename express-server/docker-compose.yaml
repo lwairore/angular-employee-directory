@@ -12,6 +12,8 @@ services:
     build: express-server
     ports:
       - '3000:3000'
+    links:
+      - database
 
   database:
     image: mongo
