@@ -1,17 +1,17 @@
 version: '2'
 
 services:
-  angular: 
-      build: angular-client 
-      ports:
-        - "4200:4200" 
-
-  express: 
-    build: express-server 
+  angular:
+    build: angular-client
     ports:
-      - "3000:3000" 
+      - '4200:4200'
 
-  database: 
-    image: mongo 
+  express:
+    build: express-server
     ports:
-      - "27017:27017" 
+      - '3000:3000'
+
+  database:
+    image: mongo
+    ports:
+      - '27017:27017'
