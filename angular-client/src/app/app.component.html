@@ -17,4 +17,10 @@
     </div>
     <button type="button" (click)="addPerson(name.value, age.value)" class="btn btn-primary">Add person</button>
   </form>
+
+  <h3>People</h3>
+  <!-- Bootstrap Card -->
+  <div class="card card-block col-md-3" *ngFor="let person of people">
+    <h4 class="card-title">{{person.name}}  {{person.age}}</h4>
+  </div>
 </div>
