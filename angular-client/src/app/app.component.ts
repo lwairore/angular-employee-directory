@@ -8,7 +8,7 @@ import { PeopleService } from './people.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  addPersonSubscription: Subscription;
+  private _addPersonSubscription: Subscription;
 
   constructor(private _peopleService: PeopleService) { }
 
@@ -17,8 +17,8 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy() { }
 
   private _unsubscribeAddPersonSubscription() {
-    if (this.addPersonSubscription instanceof Subscription) {
-      this.addPersonSubscription.unsubscribe();
+    if (this._addPersonSubscription instanceof Subscription) {
+      this._addPersonSubscription.unsubscribe();
     }
   }
 }
