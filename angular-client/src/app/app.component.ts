@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { PeopleService } from './people.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,6 @@ import { Subscription } from 'rxjs';
 export class AppComponent implements OnInit {
   addPersonSubscription: Subscription;
 
-  constructor() { }
+  constructor(private _peopleService: PeopleService) { }
   ngOnInit() { }
 }
