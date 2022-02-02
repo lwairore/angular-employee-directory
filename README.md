@@ -13,3 +13,8 @@ This application is to allow a business/company to record they employees.
 
 This is how the application looks:
 ![This image displays how the application looks like](angular-client/src/assets/demos/angular-employee-directory.png)
+
+# Technology stack
+- [Angular](https://angular.io/)
+- [Docker](https://www.docker.com/)
+- [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
