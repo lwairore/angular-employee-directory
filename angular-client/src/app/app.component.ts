@@ -30,4 +30,13 @@ export class AppComponent implements OnInit, OnDestroy {
         this._getAllPeople();
       })
   }
+
+  private _getAllPeople() {
+    this._getAllPeopleSubscription = this._peopleService.getAllPeople$()
+      .subscribe((people: any) => {
+        console.log(people)
+
+        this.people = people
+      })
+  }
 }
