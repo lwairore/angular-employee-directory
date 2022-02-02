@@ -14,6 +14,9 @@ const userSchema = new mongoose.Schema({
     age: Number
 });
 
+// create mongoose model
+const User = mongoose.model('User', userSchema);
+
 // GET api listing.
 router.get('/', (req, res) => {
     res.send('api works');
