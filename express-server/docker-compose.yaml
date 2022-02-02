@@ -5,6 +5,8 @@ services:
     build: angular-client
     ports:
       - '4200:4200'
+    volumes:
+      - ./angular-client:/app
 
   express:
     build: express-server
