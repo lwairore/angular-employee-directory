@@ -12,6 +12,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private _getAllPeopleSubscription: Subscription;
 
+  people = [];
+
   constructor(private _peopleService: PeopleService) { }
 
   ngOnInit() { }
